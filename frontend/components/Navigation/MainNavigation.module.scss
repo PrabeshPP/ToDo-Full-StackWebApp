@@ -1,0 +1,71 @@
+$primary-textColor:white;
+$nav-Cursor:pointer;
+
+.box{
+    height: 10vh;
+    width: 80%;
+    background-color: whitesmoke;
+    margin: 0% 10%;
+    box-sizing: border-box  ;
+    border-radius: 1.5rem;
+    position: sticky;
+    top: 5%;
+    box-shadow: 0px 10px 10px rgba(33, 32, 32, 0.301);
+    display: flex;
+    align-items: center;
+}
+
+.navList{
+    height: 80%;
+    width: 80%;
+    margin-left: 2.5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navBox{
+    height: 90%;
+    width: 15%;
+    background-color: purple;
+    border-radius: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: $primary-textColor;
+    cursor: pointer;
+}
+
+.navBox:hover{
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.498);
+}
+
+.button{
+    margin-left: 2.5%;
+    cursor: pointer;
+    height: 80%;
+    width: 10%;
+    background-color: red;
+    border-radius: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $primary-textColor;
+    flex-direction: column;
+
+    span{
+        font-weight: bold;
+    }
+
+    .icon{
+        height: 70%;
+        width: 70%;
+        color: $primary-textColor;
+    }
+
+}
+
+.button:hover{
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.381);
+}
