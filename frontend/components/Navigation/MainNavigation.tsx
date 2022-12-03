@@ -9,9 +9,9 @@ const MainNavigation = () => {
   return (
     <div className={classes.box}>
       <div className={classes.navList}>
-        <div className={classes.navBox}>
+        <Link href="/addtodo" className={classes.navBox}>
           Add a Task
-        </div>
+        </Link>
         <Link className={classes.navBox} href="/todos">
           To-Do Task
         </Link>

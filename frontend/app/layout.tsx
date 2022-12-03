@@ -1,6 +1,7 @@
 import React from "react";
 import MainNavigation from "../components/Navigation/MainNavigation";
 import classes from "../styles/home.module.scss";
+import "../styles/global.css";
 
 export default function RootLayout({ children }: {
     children: React.ReactNode
