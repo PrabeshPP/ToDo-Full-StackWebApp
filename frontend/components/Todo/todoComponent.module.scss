@@ -1,0 +1,88 @@
+$primary-textColor:white;
+
+
+.box{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    padding-top: 1%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    cursor: pointer;
+    background-image: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+    height: 30vh;
+    width: 20%;
+    margin: 2%;
+    border-radius: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2%;
+    color: $primary-textColor;
+}
+
+.titleBox{
+    height: 20%;
+    width: 90%;
+    text-align: center;
+    .title{
+        font-weight: bold;
+    }
+}
+.descriptionBox{
+    margin-top: 2%;
+    height: 30%;
+    width: 90%;
+    color: yellow;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+
+.buttonBox{
+    display: flex;
+    height: 20%;
+    width: 90%;
+    margin-top: 6%;
+    justify-content: space-around;
+
+    .addButton{
+        height: 80%;
+        width: 40%;
+        background: rebeccapurple;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1.3rem;
+    }
+
+    .addButton:hover{
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.532);
+    }
+
+    .deleteButton{
+        height: 80%;
+        width: 40%;
+        background: rebeccapurple;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1.3rem;
+    }
+
+    .deleteButton:hover{
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.532);
+    }
+}
+
+.card:hover{
+    box-shadow:5px 5px 10px rgba(0, 0, 0, 0.363);
+}
+

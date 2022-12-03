@@ -1,6 +1,7 @@
 import React from 'react'
 import classes from './MainNavigation.module.scss';
 import {BsPersonFill} from "react-icons/bs";
+import Link from 'next/link';
 
 
 
@@ -11,9 +12,9 @@ const MainNavigation = () => {
         <div className={classes.navBox}>
           Add a Task
         </div>
-        <div className={classes.navBox}>
+        <Link className={classes.navBox} href="/todos">
           To-Do Task
-        </div>
+        </Link>
         <div className={classes.navBox}>
           Completed 
         </div>
