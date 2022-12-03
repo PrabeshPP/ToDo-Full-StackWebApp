@@ -1,6 +1,6 @@
 import classes from "./todoComponent.module.scss";
 import {TiTick} from "react-icons/ti";
-import {AiFillDelete} from "react-icons/ai";
+import {AiFillDelete,AiOutlineArrowRight} from "react-icons/ai";
 import Link from "next/link"
 
 interface todo{
@@ -15,7 +15,7 @@ const TodoComponent=(props:{todoList:Array<todo>})=>{
         <div className={classes.box}>
             {
                 props.todoList.map((todoItem)=>{
-                    return <Link href="" key={todoItem.id} className={classes.card}>
+                    return <div key={todoItem.id} className={classes.card}>
                         <div className={classes.titleBox}>
                             <p className={classes.title}>{todoItem.title}</p>
                         </div>
@@ -32,7 +32,10 @@ const TodoComponent=(props:{todoList:Array<todo>})=>{
                                 }
                             </div>
                         </div>
-                    </Link>
+                        <Link href={`/todos/${todoItem.id}`} className={classes.moreBox}>
+                                <AiOutlineArrowRight/>
+                        </Link>
+                    </div>
                 })
             }
         </div>

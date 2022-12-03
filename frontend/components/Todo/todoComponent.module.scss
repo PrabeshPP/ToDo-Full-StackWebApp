@@ -12,7 +12,6 @@ $primary-textColor:white;
 }
 
 .card{
-    cursor: pointer;
     background-image: linear-gradient(25deg,#d64c7f,#ee4758 50%);
     height: 30vh;
     width: 20%;
@@ -47,6 +46,7 @@ $primary-textColor:white;
 }
 
 .buttonBox{
+    cursor: pointer;
     display: flex;
     height: 20%;
     width: 90%;
@@ -68,6 +68,7 @@ $primary-textColor:white;
     }
 
     .deleteButton{
+        cursor: pointer;
         height: 80%;
         width: 40%;
         background: rebeccapurple;
@@ -84,5 +85,24 @@ $primary-textColor:white;
 
 .card:hover{
     box-shadow:5px 5px 10px rgba(0, 0, 0, 0.363);
+}
+
+
+.moreBox{
+    color: $primary-textColor;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15%;
+    width: 30%;
+    background-color:purple;
+}
+
+.moreBox:hover{
+    box-shadow: 5px 5px 10px black;
 }
 
