@@ -11,11 +11,10 @@ const AddToDo=()=>{
             </div>
             
             <div className="h-[20%] w-[100%] flex flex-row justify-around pt-4">
-                <div className="h-[90%] w-[45%] bg-green-500 flex justify-center items-center rounded-lg cursor-pointer text-white">Create</div>
-                <div className="h-[90%] w-[45%] bg-red-500 flex justify-center items-center rounded-lg cursor-pointer text-white">Cancel</div>
+            <div className="h-[90%] w-[45%] bg-red-500 flex justify-center items-center rounded-lg cursor-pointer text-white hover:shadow-xl">Cancel</div>
+                <div className="h-[90%] w-[45%] bg-green-500 flex justify-center items-center rounded-lg cursor-pointer text-white hover:shadow-xl">Create</div>
+                
             </div>
-            
-
         </form>
     </div>
 }
